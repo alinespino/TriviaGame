@@ -1,7 +1,8 @@
 
 
 body,html {
-
+	margin-top: 20px;
+	margin-bottom: 50px;
 
 }
 
@@ -14,7 +15,7 @@ h1{
 }
 
 
-p {
+p, #counter,.results {
 	color: black;
 	font-size: 24px;
 	font-family: arial,helvetica,arial-narrow;
@@ -35,11 +36,13 @@ input {
 	margin-left: 70px;
 }
 
-.done-btn {
+#done-btn {
 	text-align: center;
 	font-size: 34px;
 
 }
+
+
 
 
 

@@ -11,14 +11,12 @@
 <body>
     <div class="wrapper">
 
-
         <div class="container">
-
 
             <h1 class="header"> LET'S TRIVIA ! </h1>
 
             <div id="counter">Time Remaining:</div>
-            
+
             <p>Who painted a late 15th-century mural known as the Last Supper? </p>
             <form class="buttons">
                 <input type="radio" name="q1" value="inc" checked class="btn"> Van Gogh
@@ -50,19 +48,14 @@
                 <input type="radio" name="q1" value="inc"> Bird
             </form>
             <br>
-            <div class="done-btn">
-                <form action="/action_page.php">
-                    <input type="submit" value="Done">
+            <div id="done-btn">
+                <form>
+                    <input type="submit" value="Done" onclick="location.href='results.html'">
+
             </div>
             </form>
 
-            <div class="results"> RESULTS
-            	<div id="correct">Correct Answers:</div>
-            	<div id="incorrect">Incorrect Answers:</div>
-            	<div id="noAnswer">Unanswered:</div>
-
-
-            	
+        
 
 
             </div>
