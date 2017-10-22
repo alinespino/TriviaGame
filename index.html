@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-	<meta charset="utf-8">
-
-	<link rel="stylesheet" href="assets/css/style.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-	<title>Trivia Game</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Trivia Game</title>
 </head>
+
 <body>
-	<div class="wrapper">
-
-		<div class="container">
-			<h1 class="header"> LET'S TRIVIA ! </h1>
-			<div class="questions">Who painted a late 15th-century mural known as the Last Supper?
-			</div>
-			Leonardo Da Vinci
-
-			<form>
-  				<input type="radio" name="gender" value="q1" checked> Male
- 				 <input type="radio" name="gender" value="q2"> Leonardo Da Vinci
- 				 <input type="radio" name="gender" value="q3"> Other
-			</form>
-
-			<div class="questions"> What liquor is nicknames "The green fairy?"
-			</div>
-			Absinthe
-
-			<div class="questions">What was Babe Ruth's real name?
-			</div>
-
-			George Herman Ruth
-
-			<div class="questions">What British holiday is celebrated on December 26th?
-			</div>
-			Boxing Day
-
-			<div class="questions"> What is a Kookaburra?
-			</div>
-			 Bird
-
-
-			 <form action="/action_page.php">
-  			<input type="submit" value="Done">
-			</form>
-
-
-
-		</div>
-		
-
-
-	</div>
-
-<script type="text/javascript" src="./assets/javascript/game.js"></script>
-
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="header"> LET'S TRIVIA ! </h1>
+            <p>Who painted a late 15th-century mural known as the Last Supper? </p>
+            <form class="buttons">
+                <input type="radio" name="q1" value="inc" checked class="btn"> Van Gogh
+                <input type="radio" name="q1" value="corr"> Leonardo Da Vinci
+                <input type="radio" name="q1" value="inc"> Rembrandt
+            </form>
+            <p>What liquor is nicknamed "The green fairy?" </p>
+            <form class="buttons">
+                <input type="radio" name="q1" value="inc" checked>Absinthe
+                <input type="radio" name="q1" value="corr"> Jagger
+                <input type="radio" name="q1" value="inc"> Whiskey
+            </form>
+            <p>What was Babe Ruth's real name?</p>
+            <form class="buttons">
+                <input type="radio" name="q1" value="inc" checked>Bernard Ruth
+                <input type="radio" name="q1" value="corr"> George Herman Ruth
+                <input type="radio" name="q1" value="inc">Jayson Ruth
+            </form>
+            <p>What British holiday is celebrated on December 26th? </p>
+            <form class="buttons">
+                <input type="radio" name="q1" value="inc" checked>Royalty Day
+                <input type="radio" name="q1" value="corr">Tower Day
+                <input type="radio" name="q1" value="inc">Boxing Day
+            </form>
+            <p>What is a Kookaburra?</p>
+            <form class="buttons">
+                <input type="radio" name="q1" value="inc" checked>Type of Burrito
+                <input type="radio" name="q1" value="corr">Donkey
+                <input type="radio" name="q1" value="inc"> Bird
+            </form>
+            <br>
+            <div class="done-btn">
+                <form action="/action_page.php">
+                    <input type="submit" value="Done">
+            </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
+
 </html>

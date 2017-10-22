@@ -1,0 +1,45 @@
+
+
+body,html {
+
+
+}
+
+
+h1{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 60px;
+
+}
+
+
+p {
+	color: black;
+	font-size: 24px;
+	font-family: arial,helvetica,arial-narrow;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.buttons {
+	font-size: 18px;
+	text-align: center;
+	font-family: arial,helvetica,arial-narrow;
+
+}
+
+input {
+
+	margin-left: 70px;
+}
+
+.done-btn {
+	text-align: center;
+	font-size: 34px;
+
+}
+
+
+
