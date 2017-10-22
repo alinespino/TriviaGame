@@ -34,14 +34,14 @@ p, #counter,.results {
 input {
 
 	margin-left: 70px;
-}
-
-#done-btn {
-	text-align: center;
-	font-size: 34px;
 
 }
 
+#done-btn, #start-btn {
+	align-content: center;
+
+
+}
 
 
 
