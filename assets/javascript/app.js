@@ -3,11 +3,11 @@
 
 // COULD NOT FIGURE OUT WHY MY RESULTS COULD NOT SHOW IN THE RESULTS.HTML PAGE.
 
-// ALSO, DIDNT KNOW HOW TO USE FOR LOOPS AND CONDITIONS WITH TIMER AND DONE BUTTON,
-  // I JUST COPIED IT TWICE =( //  
+// ALSO, DIDNT KNOW HOW TO USE FOR LOOPS AND CONDITIONS WITH TIMER AND DONE BUTTON.
+  // =( //  
 
 // timer variables//
-var timer = 6;
+var timer = 60;
 var interval;
 
 
@@ -29,26 +29,6 @@ incorrect ++;
 
 }
 
-// TIMER // // 
-
-
-function run() {
-interval = setInterval(decrement, 1000);
-}
-
-function decrement() {
-timer --;
-$("#counter").text("Time remaining:" + " " + timer + " " + "secs" );
-}
-
-function openWin() {
-window.location= "results.html";
-}
-
-if (timer === 0) {
-openWin();
-}
-
 
 // DOCUMENT READY // 
 
@@ -56,12 +36,11 @@ $(document).ready (function(){
 run();
 
 
+
 $("#done-btn").on("click",function(e){  
 e.preventDefault();
 
-
 // variables to store answers // 
-
 
 var userAnswers = [];
 var numQuestions = 5;
@@ -126,11 +105,32 @@ else {
 alert ("Correct Answers: " + correct);
 alert("Incorrect Answers: " + incorrect);
 
+
 })
 
+// TIMER // // 
+function run() {
+interval = setInterval(decrement, 1000);
+}
 
+function decrement() {
+timer --;
+$("#counter").text("Time remaining:" + " " + timer + " " + "secs" );
+
+function openWin() {
+window.location = "results.html";
+}
+
+if (timer === 0) {
+openWin();
+
+}
+
+
+}
 
 
 });
+
 
 
